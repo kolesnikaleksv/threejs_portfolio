@@ -1,9 +1,25 @@
 @import url('https://fonts.cdnfonts.com/css/general-sans');
+@import "tailwindcss";
+/*@tailwind base;*/
+/*@tailwind components;*/
+/*@tailwind utilities;*/
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --font-display: "Satoshi", "sans-serif";
+  --general-sans: 'General Sans', 'sans-serif';
+  /*--black-default: '#000';*/
+  /*--black-100: '#010103';*/
+  /*--black-200: '#0E0E10';*/
+  /*--black-300: '#1C1C21';*/
+  /*--black-500: #3A3A49;*/
+  /*--black-600: '#1A1A1A';*/
+  /*800: '#E4E4E6',*/
+  /*700: '#D6D9E9',*/
+  /*600: '#AFB0B6',*/
+  /*500: '#62646C',*/
+  /* ... */
 
+}
 * {
   scroll-behavior: smooth;
 }
@@ -14,12 +30,13 @@ body {
 }
 
 @layer utilities {
+
   .c-space {
     @apply sm:px-10 px-5;
   }
 
   .head-text {
-    @apply sm:text-4xl text-3xl font-semibold text-gray_gradient;
+    @apply sm:text-4xl text-3xl font-semibold;/* text-gray_gradient*/
   }
 
   .nav-ul {
@@ -27,7 +44,8 @@ body {
   }
 
   .nav-li {
-    @apply text-neutral-400 hover:text-white font-generalsans max-sm:hover:bg-black-500 max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
+    @apply text-neutral-400 hover:text-white  max-sm:hover:bg-[#3A3A49] max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5 ; /*font-general-sans */
+    font-family: 'General Sans', 'sans-serif';
   }
 
   .nav-li_a {
@@ -35,7 +53,7 @@ body {
   }
 
   .nav-sidebar {
-    @apply absolute left-0 right-0 bg-black-200 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
+    @apply absolute left-0 right-0 bg-[#0E0E10] backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
   }
 
   .text-gray_gradient {
@@ -44,7 +62,7 @@ body {
 
   /* button component */
   .btn {
-    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black-300  transition-all active:scale-95 text-white mx-auto;
+    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-[#1C1C21]  transition-all active:scale-95 text-white mx-auto;
   }
 
   .btn-ping {
@@ -57,20 +75,23 @@ body {
 
   /* hero section */
   .hero_tag {
-    @apply text-center xl:text-6xl md:text-5xl sm:text-4xl text-3xl font-generalsans font-black !leading-normal;
+    @apply text-center xl:text-6xl md:text-5xl sm:text-4xl text-3xl font-black !leading-normal;
+    font-family: 'General Sans', 'sans-serif';
   }
 
   /* about section */
   .grid-container {
-    @apply w-full h-full border border-black-300 bg-black-200 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+    @apply w-full h-full border border-[#1C1C21] bg-[#0E0E10] rounded-lg sm:p-7 p-4 flex flex-col gap-5;
   }
 
   .grid-headtext {
-    @apply text-xl font-semibold mb-2 text-white font-generalsans;
+    @apply text-xl font-semibold mb-2 text-white;
+    font-family: 'General Sans', 'sans-serif';
   }
 
   .grid-subtext {
-    @apply text-[#afb0b6] text-base font-generalsans;
+    @apply text-[#afb0b6] text-base;
+    font-family: 'General Sans', 'sans-serif';
   }
 
   .copy-container {
@@ -79,11 +100,18 @@ body {
 
   /* projects section  */
   .arrow-btn {
-    @apply w-10 h-10 p-3 cursor-pointer active:scale-95 transition-all rounded-full arrow-gradient;
+    @apply w-10 h-10 p-3 cursor-pointer active:scale-95 transition-all rounded-full ; /* arrow-gradient */
+    background-image: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0.1) 10%,
+            rgba(255, 255, 255, 0.000025) 50%,
+            rgba(255, 255, 255, 0.000025) 50%,
+            rgba(255, 255, 255, 0.025) 100%
+    );
   }
 
   .tech-logo {
-    @apply w-10 h-10 rounded-md p-2 bg-neutral-100 bg-opacity-10 backdrop-filter backdrop-blur-lg flex justify-center items-center;
+    @apply w-10 h-10 rounded-md p-2 bg-neutral-100/10 backdrop-filter backdrop-blur-lg flex justify-center items-center;
   }
 
   /* clients section */
@@ -92,7 +120,7 @@ body {
   }
 
   .client-review {
-    @apply rounded-lg md:p-10 p-5 col-span-1 bg-black-300 bg-opacity-50;
+    @apply rounded-lg md:p-10 p-5 col-span-1 bg-[#1C1C21]/50;
   }
 
   .client-content {
@@ -105,23 +133,23 @@ body {
   }
 
   .work-canvas {
-    @apply col-span-1 rounded-lg bg-black-200 border border-black-300;
+    @apply col-span-1 rounded-lg bg-[#0E0E10] border border-[#1C1C21];
   }
 
   .work-content {
-    @apply col-span-2 rounded-lg bg-black-200 border border-black-300;
+    @apply col-span-2 rounded-lg bg-[#0E0E10] border border-[#1C1C21];
   }
 
   .work-content_container {
-    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
+    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-[#1C1C21] rounded-lg sm:px-5 px-2.5;
   }
 
   .work-content_logo {
-    @apply rounded-3xl w-16 h-16 p-2 bg-black-600;
+    @apply rounded-3xl w-16 h-16 p-2 bg-[#1A1A1A];
   }
 
   .work-content_bar {
-    @apply flex-1 w-0.5 mt-4 h-full bg-black-300 group-hover:bg-black-500 group-last:hidden;
+    @apply flex-1 w-0.5 mt-4 h-full bg-[#1C1C21] group-hover:bg-[#3A3A49] group-last:hidden;
   }
 
   /* contact section */
@@ -130,15 +158,15 @@ body {
   }
 
   .field-label {
-    @apply text-lg text-white-600;
+    @apply text-lg text-[#AFB0B6];
   }
 
   .field-input {
-    @apply w-full bg-black-300 px-5 py-2 min-h-14 rounded-lg placeholder:text-white-500 text-lg text-white-800 shadow-black-200 shadow-2xl focus:outline-none;
+    @apply w-full bg-[#1C1C21] px-5 py-2 min-h-14 rounded-lg placeholder:text-[#62646C] text-lg text-[#E4E4E6] shadow-[#0E0E10] shadow-2xl focus:outline-none;
   }
 
   .field-btn {
-    @apply bg-black-500 px-5 py-2 min-h-12 rounded-lg shadow-black-200 shadow-2xl flex justify-center items-center text-lg text-white gap-3;
+    @apply bg-[#3A3A49] px-5 py-2 min-h-12 rounded-lg shadow-[#0E0E10] shadow-2xl flex justify-center items-center text-lg text-white gap-3;
   }
 
   .field-btn_arrow {
@@ -147,7 +175,7 @@ body {
 
   /*  footer */
   .social-icon {
-    @apply w-12 h-12 rounded-full flex justify-center items-center bg-black-300 border border-black-200;
+    @apply w-12 h-12 rounded-full flex justify-center items-center bg-[#1C1C21] border border-[#0E0E10];
   }
 }
 
