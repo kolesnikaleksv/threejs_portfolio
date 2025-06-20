@@ -12,7 +12,6 @@ import Rings from "../components/Rings.jsx";
 import HeroCamera from "../components/HeroCamera.jsx";
 import Button from "../components/Button.jsx";
 
-
 const Hero = () => {
 
   const isSmall = useMediaQuery({maxWidth: 440})
@@ -23,8 +22,10 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex flex-col w-full relative">
       <div className="w-full mx-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
-        <p className="text-white text-2xl font-medium text-center font-generalsans">Hi, I am Olex <span
-          className="waving-hand">🖖</span></p>
+        <p className="text-white text-2xl font-medium text-center font-generalsans">
+          Hi, I am Olex <span
+          className="waving-hand">🖖</span>
+        </p>
         <p className="hero_tag text-gray_gradient">Building Product & Brands</p>
       </div>
       <div className="w-full h-full absolute inset-0">
