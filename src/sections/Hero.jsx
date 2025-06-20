@@ -3,33 +3,16 @@ import {PerspectiveCamera} from "@react-three/drei";
 import HackerRoom from "../components/HackerRoom.jsx";
 import {Suspense} from "react";
 import CanvasLoader from "../components/CanvasLoader.jsx";
-import {Leva, useControls} from "leva";
-import {max} from "three/src/Three.TSL.js";
 import {useMediaQuery} from "react-responsive";
 import {calculateSizes} from "../constants/index.js";
+import Target from "../components/Target.jsx";
+import ReactLogo from "../components/ReactLogo.jsx";
+import Cube from "../components/Cube.jsx";
+import Rings from "../components/Rings.jsx";
+
 
 const Hero = () => {
-  const x = useControls('HackerRoom', {
-    positionX: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    positionY: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    positionZ: {
-      value: 2.5,
-      min: -10,
-      max: 10,
-    },
-    rotationX: {value: 0, min: -10, max: 10},
-    rotationY: {value: 0, min: -10, max: 10},
-    rotationZ: {value: 0, min: -10, max: 10},
-    scale: {value: 1, min: -0.1, max: 10},
-  });
+
   const isSmall = useMediaQuery({maxWidth: 440})
   const isMobile = useMediaQuery({maxWidth: 768});
   const isTablet = useMediaQuery({minWidth: 768, maxWidth: 1024});
@@ -43,20 +26,21 @@ const Hero = () => {
         <p className="hero_tag text-gray_gradient">Building Product & Brands</p>
       </div>
       <div className="w-full h-full absolute inset-0">
-        <Leva/>
+        {/*<Leva/>*/}
         <Canvas className="w-full h-full">
           <Suspense fallback={<CanvasLoader/>}>
-            <PerspectiveCamera makeDefault position={[0, 0, 30]}/>
-            {/*<HackerRoom*/}
-            {/*  position={sizes.deskPosition}*/}
-            {/*  rotation={[0, -Math.PI, 0]}*/}
-            {/*  scale={sizes.deskScale}*/}
-            {/*/>*/}
+            <PerspectiveCamera makeDefault position={[0, 0, 20]}/>
             <HackerRoom
-              position={[x.positionX, x.positionY, x.positionZ]}
-              rotation={[x.rotationX, x.rotationY, x.rotationZ]}
-              scale={[x.scale, x.scale, x.scale]}
+              position={sizes.deskPosition}
+              rotation={[0, -Math.PI, 0]}
+              scale={sizes.deskScale}
             />
+            <group>
+              <Target position={sizes.targetPosition}/>
+              <ReactLogo position={sizes.reactLogoPosition}/>
+              <Rings position={sizes.ringPosition}/>
+              <Cube position={sizes.cubePosition}/>
+            </group>
             <ambientLight intensity={1}/>
             <directionalLight position={[10, 10, 10]} intensity={0.5}/>
           </Suspense>
