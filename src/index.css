@@ -36,7 +36,7 @@ body {
     }
 
     .head-text {
-        @apply sm:text-4xl text-3xl font-semibold;
+        @apply sm:text-4xl text-3xl font-semibold bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent;
         /* text-gray_gradient*/
     }
 
