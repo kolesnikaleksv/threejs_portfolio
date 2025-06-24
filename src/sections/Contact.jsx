@@ -18,7 +18,7 @@ const Contact = () => {
     event.preventDefault();
 
     setLoading(true);
-    
+
     try {
       await emailjs.send(
         'service_1ndktii',
@@ -44,7 +44,7 @@ const Contact = () => {
     }
   }
   return (
-    <section className="c-space">
+    <section className="c-space my-20">
       <div className="relative min-h-screen flex flex-col justify-center items-center">
         <img src="/assets/terminal.png" alt="Terminal background"
              className="min-h-screen h-full absolute inset-0 "/>
