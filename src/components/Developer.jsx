@@ -4,13 +4,24 @@ import {useAnimations, useFBX, useGLTF} from '@react-three/drei'
 const Developer = ({animationName = 'idle', ...props}) => {
   const group = useRef(null)
   const {nodes, materials} = useGLTF('/models/human/glasses.glb');
+
   const {animations: idleAnimation} = useFBX('/models/animations/idle.fbx');
-  
+  const {animations: saluteAnimation} = useFBX('/models/animations/salute.fbx');
+  const {animations: clappingAnimation} = useFBX('/models/animations/clapping.fbx');
+  const {animations: victoryAnimation} = useFBX('/models/animations/victory.fbx');
   if (idleAnimation?.[0]) {
     idleAnimation[0].name = 'idle';
   }
-
-  const {actions} = useAnimations([idleAnimation[0]], group)
+  if (saluteAnimation?.[0]) {
+    saluteAnimation[0].name = 'salute';
+  }
+  if (clappingAnimation?.[0]) {
+    clappingAnimation[0].name = 'clapping';
+  }
+  if (victoryAnimation?.[0]) {
+    victoryAnimation[0].name = 'victory';
+  }
+  const {actions} = useAnimations([idleAnimation[0], clappingAnimation[0], saluteAnimation[0], victoryAnimation[0]], group)
   useEffect(() => {
     const action = actions[animationName];
     if (action) {
