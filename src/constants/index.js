@@ -58,13 +58,13 @@ export const clientReviews = [
 
 export const myProjects = [
   {
-    title: 'Podcastr - AI Podcast Platform',
-    desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
-    subdesc:
-      'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-    href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
-    texture: '/textures/project/project1.mp4',
-    logo: '/assets/project-logo1.png',
+    title: 'The Private Surgeon Clinic - Medical Website',
+    desc: 'The Private Surgeon Clinic is a modern, multilingual website built for a private surgical practice. Designed with accessibility and trust in mind, it features a clean UI, responsive layout, and seamless internationalization using Next.js, TypeScript, and Tailwind CSS.',
+    subdesc: 'Developed with Next.js 15 App Router, Tailwind CSS, TypeScript, Shadcn UI, and next-intl, the site delivers fast performance, responsive design, and a professional user experience tailored for both English and Ukrainian audiences.',
+
+    href: 'https://private-surgeon.vercel.app',
+    texture: '/textures/project/private_surgeon.mp4',
+    logo: '/assets/surgeon_logo.png',
     logoStyle: {
       backgroundColor: '#2A1816',
       border: '0.2px solid #36201D',
@@ -89,8 +89,8 @@ export const myProjects = [
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'Nextjs',
+        path: '/assets/next_logo.png',
       },
     ],
   },

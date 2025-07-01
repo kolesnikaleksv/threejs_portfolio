@@ -6,7 +6,7 @@ import gsap from "gsap";
 const DemoComputer = (props) => {
   const group = useRef()
   const {nodes, materials} = useGLTF('/models/computer.glb');
-  const txt = useVideoTexture(props.texture ? props.texture : '/textures/project/project1.mp4');
+  const txt = useVideoTexture(props.texture ? props.texture : '/textures/project/private_surgeon.mp4');
   useEffect(() => {
     if (txt) {
       txt.flipY = false;
