@@ -99,7 +99,7 @@ export const myProjects = [
     desc: 'YC Directory is a dynamic platform where entrepreneurs can pitch their startup ideas, explore others, and engage with a like-minded community. It fosters innovation by offering a space for idea sharing, discovery, and collaboration.',
     subdesc: 'Built with Next.js 15, Tailwind CSS, TypeScript, and Sanity CMS, YC Directory features GitHub authentication, real-time content updates, and a clean, minimal UI for seamless user interaction and pitch management.',
     href: 'https://yc-directory-ebon.vercel.app',
-    texture: '/textures/project/pitch_your_project.mp4',
+    texture: '/textures/project/yc_directory.mp4',
     logo: '/assets/lightbulb.ico',
     logoStyle: {
       backgroundColor: '#13202F',
@@ -169,13 +169,12 @@ export const myProjects = [
     ],
   },
   {
-    title: 'Horizon - Online Banking Platform',
-    desc: 'Horizon is a comprehensive online banking platform that offers users a centralized finance management dashboard. It allows users to connect multiple bank accounts, monitor real-time transactions, and seamlessly transfer money to other users.',
-    subdesc:
-      'Built with Next.js 14 Appwrite, Dwolla and Plaid, Horizon ensures a smooth and secure banking experience, tailored to meet the needs of modern consumers.',
-    href: 'https://www.youtube.com/watch?v=PuOVqP_cjkE',
-    texture: '/textures/project/project4.mp4',
-    logo: '/assets/project-logo4.png',
+    title: 'WebWizardOK - Full-Stack Developer Portfolio',
+    desc: 'WebWizardOK is a visually rich portfolio site that showcases the skills and creativity of a full-stack developer. It features immersive canvas animations, smooth transitions, and a bold design that reflects both technical depth and artistic flair.',
+    subdesc: 'Built with Next.js 14, TypeScript, Tailwind CSS, and GSAP, the site includes animated canvas elements, interactive sections, and a responsive layout. It highlights the developer’s expertise in both front-end and back-end technologies through a dynamic and engaging user experience.',
+    href: 'https://childhood.webwizardok.com',
+    texture: '/textures/project/portfolio.mp4',
+    logo: '/assets/portfolio_logo.png',
     logoStyle: {
       backgroundColor: '#0E1F38',
       border: '0.2px solid #0E2D58',
@@ -206,10 +205,9 @@ export const myProjects = [
     ],
   },
   {
-    title: 'Imaginify - AI Photo Manipulation App',
-    desc: 'Imaginify is a groundbreaking Software-as-a-Service application that empowers users to create stunning photo manipulations using AI technology. With features like AI-driven image editing, a payments system, and a credits-based model.',
-    subdesc:
-      'Built with Next.js 14, Cloudinary AI, Clerk, and Stripe, Imaginify combines cutting-edge technology with a user-centric approach. It can be turned into a side income or even a full-fledged business.',
+    title: 'WebWizardOK - Full-Stack Developer Portfolio',
+    desc: 'WebWizardOK is a visually rich portfolio site that showcases the skills and creativity of a full-stack developer. It features immersive canvas animations, smooth transitions, and a bold design that reflects both technical depth and artistic flair.',
+    subdesc: 'Built with Next.js 14, TypeScript, Tailwind CSS, and GSAP, the site includes animated canvas elements, interactive sections, and a responsive layout. It highlights the developer’s expertise in both front-end and back-end technologies through a dynamic and engaging user experience.',
     href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
     texture: '/textures/project/project5.mp4',
     logo: '/assets/project-logo5.png',
