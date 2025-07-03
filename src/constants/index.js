@@ -70,6 +70,42 @@ export const myProjects = [
       border: '0.2px solid #36201D',
       boxShadow: '0px 0px 60px 0px #AA3C304D',
     },
+    spotlight: '/assets/spotlight2.png',
+    tags: [
+      {
+        id: 1,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 2,
+        name: 'TailwindCSS',
+        path: 'assets/tailwindcss.png',
+      },
+      {
+        id: 3,
+        name: 'TypeScript',
+        path: '/assets/typescript.png',
+      },
+      {
+        id: 4,
+        name: 'Nextjs',
+        path: '/assets/next_logo.png',
+      },
+    ],
+  },
+  {
+    title: 'YC Directory - Startup Pitch Platform',
+    desc: 'YC Directory is a dynamic platform where entrepreneurs can pitch their startup ideas, explore others, and engage with a like-minded community. It fosters innovation by offering a space for idea sharing, discovery, and collaboration.',
+    subdesc: 'Built with Next.js 15, Tailwind CSS, TypeScript, and Sanity CMS, YC Directory features GitHub authentication, real-time content updates, and a clean, minimal UI for seamless user interaction and pitch management.',
+    href: 'https://yc-directory-ebon.vercel.app',
+    texture: '/textures/project/pitch_your_project.mp4',
+    logo: '/assets/lightbulb.ico',
+    logoStyle: {
+      backgroundColor: '#13202F',
+      border: '0.2px solid #17293E',
+      boxShadow: '0px 0px 60px 0px #2F6DB54D',
+    },
     spotlight: '/assets/spotlight1.png',
     tags: [
       {
@@ -95,50 +131,12 @@ export const myProjects = [
     ],
   },
   {
-    title: 'LiveDoc - Real-Time Google Docs Clone',
-    desc: 'LiveDoc is a powerful collaborative app that elevates the capabilities of real-time document editing. As an enhanced version of Google Docs, It supports millions of collaborators simultaneously, ensuring that every change is captured instantly and accurately.',
-    subdesc:
-      'With LiveDoc, users can experience the future of collaboration, where multiple contributors work together in real time without any lag, by using Next.js and Liveblocks newest features.',
-    href: 'https://www.youtube.com/watch?v=y5vE8y_f_OM',
-    texture: '/textures/project/project2.mp4',
-    logo: '/assets/project-logo2.png',
-    logoStyle: {
-      backgroundColor: '#13202F',
-      border: '0.2px solid #17293E',
-      boxShadow: '0px 0px 60px 0px #2F6DB54D',
-    },
-    spotlight: '/assets/spotlight2.png',
-    tags: [
-      {
-        id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
-      },
-      {
-        id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
-      },
-      {
-        id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
-      },
-      {
-        id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
-      },
-    ],
-  },
-  {
-    title: 'CarePulse - Health Management System',
-    desc: 'An innovative healthcare platform designed to streamline essential medical processes. It simplifies patient registration, appointment scheduling, and medical record management, providing a seamless experience for both healthcare providers and patients.',
-    subdesc:
-      'With a focus on efficiency, CarePulse integrantes complex forms and SMS notifications, by using Next.js, Appwrite, Twillio and Sentry that enhance operational workflows.',
-    href: 'https://www.youtube.com/watch?v=lEflo_sc82g',
-    texture: '/textures/project/project3.mp4',
-    logo: '/assets/project-logo3.png',
+    title: 'Shoe Store - Full-Stack E-commerce Platform',
+    desc: 'Shoe Store is a complete e-commerce web application featuring a modern storefront, shopping cart, checkout flow, and an admin dashboard. It allows users to browse products, manage their cart, and securely complete purchases.',
+    subdesc: 'Built with Next.js 15, TypeScript, Tailwind CSS, and Stripe, the platform includes a full-featured admin dashboard for managing products, banners, and orders. It supports real-time statistics, order tracking, and secure payment processing, making it a scalable foundation for any online store.',
+    href: 'https://shoe-oleks.vercel.app',
+    texture: '/textures/project/shoe_olex.mp4',
+    logo: '/assets/shoe_olex_logo.png',
     logoStyle: {
       backgroundColor: '#60f5a1',
       background:
@@ -165,8 +163,8 @@ export const myProjects = [
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'Nextjs',
+        path: '/assets/next_logo.png',
       },
     ],
   },
