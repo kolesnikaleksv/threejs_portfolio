@@ -28,7 +28,7 @@ export const clientReviews = [
     position: 'Marketing Director at GreenLeaf',
     img: 'assets/review1.png',
     review:
-      'Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
+      'Working with Oleksandr was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.',
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ export const clientReviews = [
     position: 'Founder of TechGear Shop',
     img: 'assets/review2.png',
     review:
-      'Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
+      'Oleksandr’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional! Fantastic work.',
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ export const clientReviews = [
     position: 'Project Manager at UrbanTech ',
     img: 'assets/review3.png',
     review:
-      'I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
+      'I can’t say enough good things about Oleksandr. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.',
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ export const clientReviews = [
     position: 'CEO of BrightStar Enterprises',
     img: 'assets/review4.png',
     review:
-      'Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
+      'Oleksandr was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend backend dev are top-notch.',
   },
 ];
 
@@ -205,12 +205,12 @@ export const myProjects = [
     ],
   },
   {
-    title: 'WebWizardOK - Full-Stack Developer Portfolio',
-    desc: 'WebWizardOK is a visually rich portfolio site that showcases the skills and creativity of a full-stack developer. It features immersive canvas animations, smooth transitions, and a bold design that reflects both technical depth and artistic flair.',
-    subdesc: 'Built with Next.js 14, TypeScript, Tailwind CSS, and GSAP, the site includes animated canvas elements, interactive sections, and a responsive layout. It highlights the developer’s expertise in both front-end and back-end technologies through a dynamic and engaging user experience.',
-    href: 'https://www.youtube.com/watch?v=Ahwoks_dawU',
-    texture: '/textures/project/project5.mp4',
-    logo: '/assets/project-logo5.png',
+    title: 'Pulse - Sport Tech Landing Page',
+    desc: 'Pulse is a single-page landing site designed to promote heart rate monitors for runners and athletes. It features smooth animations, interactive sliders, and a clean, modern layout that highlights product benefits and encourages user engagement.',
+    subdesc: 'Built with HTML, CSS, jQuery, and animation libraries, Pulse includes form validation, dynamic UI effects, and responsive design. It’s optimized for performance and crafted to deliver a visually engaging experience across all devices.',
+    href: 'https://pulse.webwizardok.com',
+    texture: '/textures/project/pulse.mp4',
+    logo: '/assets/pulse_logo.png',
     logoStyle: {
       backgroundColor: '#1C1A43',
       border: '0.2px solid #252262',
@@ -220,23 +220,23 @@ export const myProjects = [
     tags: [
       {
         id: 1,
-        name: 'React.js',
-        path: '/assets/react.svg',
+        name: 'jQuery',
+        path: '/assets/jquery_icon.svg',
       },
       {
         id: 2,
-        name: 'TailwindCSS',
-        path: 'assets/tailwindcss.png',
+        name: 'JavaScript',
+        path: 'assets/javascript_icon.svg',
       },
       {
         id: 3,
-        name: 'TypeScript',
-        path: '/assets/typescript.png',
+        name: 'Bootstrap',
+        path: '/assets/bootstrap_icon.svg',
       },
       {
         id: 4,
-        name: 'Framer Motion',
-        path: '/assets/framer.png',
+        name: 'CSS',
+        path: '/assets/css_icon.svg',
       },
     ],
   },
