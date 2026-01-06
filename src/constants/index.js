@@ -60,7 +60,8 @@ export const myProjects = [
   {
     title: 'The Private Surgeon Clinic - Medical Website',
     desc: 'The Private Surgeon Clinic is a modern, multilingual website built for a private surgical practice. Designed with accessibility and trust in mind, it features a clean UI, responsive layout, and seamless internationalization using Next.js, TypeScript, and Tailwind CSS.',
-    subdesc: 'Developed with Next.js 15 App Router, Tailwind CSS, TypeScript, Shadcn UI, and next-intl, the site delivers fast performance, responsive design, and a professional user experience tailored for both English and Ukrainian audiences.',
+    subdesc:
+      'Developed with Next.js 15 App Router, Tailwind CSS, TypeScript, Shadcn UI, and next-intl, the site delivers fast performance, responsive design, and a professional user experience tailored for both English and Ukrainian audiences.',
 
     href: 'https://private-surgeon.vercel.app',
     texture: '/textures/project/private_surgeon.mp4',
@@ -97,7 +98,8 @@ export const myProjects = [
   {
     title: 'YC Directory - Startup Pitch Platform',
     desc: 'YC Directory is a dynamic platform where entrepreneurs can pitch their startup ideas, explore others, and engage with a like-minded community. It fosters innovation by offering a space for idea sharing, discovery, and collaboration.',
-    subdesc: 'Built with Next.js 15, Tailwind CSS, TypeScript, and Sanity CMS, YC Directory features GitHub authentication, real-time content updates, and a clean, minimal UI for seamless user interaction and pitch management.',
+    subdesc:
+      'Built with Next.js 15, Tailwind CSS, TypeScript, and Sanity CMS, YC Directory features GitHub authentication, real-time content updates, and a clean, minimal UI for seamless user interaction and pitch management.',
     href: 'https://yc-directory-ebon.vercel.app',
     texture: '/textures/project/yc_directory.mp4',
     logo: '/assets/lightbulb.ico',
@@ -133,7 +135,8 @@ export const myProjects = [
   {
     title: 'Shoe Store - Full-Stack E-commerce Platform',
     desc: 'Shoe Store is a complete e-commerce web application featuring a modern storefront, shopping cart, checkout flow, and an admin dashboard. It allows users to browse products, manage their cart, and securely complete purchases.',
-    subdesc: 'Built with Next.js 15, TypeScript, Tailwind CSS, and Stripe, the platform includes a full-featured admin dashboard for managing products, banners, and orders. It supports real-time statistics, order tracking, and secure payment processing, making it a scalable foundation for any online store.',
+    subdesc:
+      'Built with Next.js 15, TypeScript, Tailwind CSS, and Stripe, the platform includes a full-featured admin dashboard for managing products, banners, and orders. It supports real-time statistics, order tracking, and secure payment processing, making it a scalable foundation for any online store.',
     href: 'https://shoe-oleks.vercel.app',
     texture: '/textures/project/shoe_olex.mp4',
     logo: '/assets/shoe_olex_logo.png',
@@ -171,7 +174,8 @@ export const myProjects = [
   {
     title: 'WebWizardOK - Full-Stack Developer Portfolio',
     desc: 'WebWizardOK is a visually rich portfolio site that showcases the skills and creativity of a full-stack developer. It features immersive canvas animations, smooth transitions, and a bold design that reflects both technical depth and artistic flair.',
-    subdesc: 'Built with Next.js 14, TypeScript, Tailwind CSS, and GSAP, the site includes animated canvas elements, interactive sections, and a responsive layout. It highlights the developer’s expertise in both front-end and back-end technologies through a dynamic and engaging user experience.',
+    subdesc:
+      'Built with Next.js 14, TypeScript, Tailwind CSS, and GSAP, the site includes animated canvas elements, interactive sections, and a responsive layout. It highlights the developer’s expertise in both front-end and back-end technologies through a dynamic and engaging user experience.',
     href: 'https://childhood.webwizardok.com',
     texture: '/textures/project/portfolio.mp4',
     logo: '/assets/portfolio_logo.png',
@@ -207,7 +211,8 @@ export const myProjects = [
   {
     title: 'Pulse - Sport Tech Landing Page',
     desc: 'Pulse is a single-page landing site designed to promote heart rate monitors for runners and athletes. It features smooth animations, interactive sliders, and a clean, modern layout that highlights product benefits and encourages user engagement.',
-    subdesc: 'Built with HTML, CSS, jQuery, and animation libraries, Pulse includes form validation, dynamic UI effects, and responsive design. It’s optimized for performance and crafted to deliver a visually engaging experience across all devices.',
+    subdesc:
+      'Built with HTML, CSS, jQuery, and animation libraries, Pulse includes form validation, dynamic UI effects, and responsive design. It’s optimized for performance and crafted to deliver a visually engaging experience across all devices.',
     href: 'https://pulse.webwizardok.com',
     texture: '/textures/project/pulse.mp4',
     logo: '/assets/pulse_logo.png',
@@ -246,10 +251,41 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
   return {
     deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
     deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
-    cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
-    reactLogoPosition: isSmall ? [3, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [12, 3, 0],
-    ringPosition: isSmall ? [-5, 7, 0] : isMobile ? [-10, 10, 0] : isTablet ? [-12, 10, 0] : [-24, 10, 0],
-    targetPosition: isSmall ? [-5, -10, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -13, -10],
+    cubePosition: isSmall
+      ? [3, -5, 3]
+      : isMobile
+      ? [5, -5, 0]
+      : isTablet
+      ? [5, -5, 0]
+      : [9, -5.5, 0],
+    reactLogoPosition: isSmall
+      ? [3, 4, 0]
+      : isMobile
+      ? [5, 4, 0]
+      : isTablet
+      ? [5, 4, 0]
+      : [12, 3, 0],
+    ringPosition: isSmall
+      ? [-5, 7, 0]
+      : isMobile
+      ? [-10, 10, 0]
+      : isTablet
+      ? [-12, 10, 0]
+      : [-24, 10, 0],
+    targetPosition: isSmall
+      ? [-5, -10, -10]
+      : isMobile
+      ? [-9, -10, -10]
+      : isTablet
+      ? [-11, -7, -10]
+      : [-13, -13, -10],
+    archeryTargetPosition: isSmall
+      ? [-5, -10, -10]
+      : isMobile
+      ? [-9, -10, -10]
+      : isTablet
+      ? [-11, -7, -10]
+      : [-13, -12, -10],
   };
 };
 
@@ -259,7 +295,8 @@ export const workExperiences = [
     name: 'Freelancer',
     pos: 'Full-Stack Developer',
     duration: '2023 - Present',
-    title: "As a freelancer, I build responsive landing pages, full-stack web apps, and e-commerce platforms. I focus on accessibility, performance, and clean design using tools like Next.js, TypeScript, and Tailwind CSS.",
+    title:
+      'As a freelancer, I build responsive landing pages, full-stack web apps, and e-commerce platforms. I focus on accessibility, performance, and clean design using tools like Next.js, TypeScript, and Tailwind CSS.',
     icon: '/assets/freelancer_icon.svg',
     animation: 'victory',
   },
@@ -268,7 +305,8 @@ export const workExperiences = [
     name: 'UKAD',
     pos: 'Front-End Developer',
     duration: '2021 - 2023',
-    title: "At UKAD, I contributed to nine diverse projects, focusing on building accessible, SEO-optimized, and performant user interfaces. I worked with React, TypeScript, and UI libraries like MUI and Tailwind CSS to deliver clean, responsive web applications with strong attention to best practices in performance, accessibility, and SEO.",
+    title:
+      'At UKAD, I contributed to nine diverse projects, focusing on building accessible, SEO-optimized, and performant user interfaces. I worked with React, TypeScript, and UI libraries like MUI and Tailwind CSS to deliver clean, responsive web applications with strong attention to best practices in performance, accessibility, and SEO.',
     icon: '/assets/UKAD_3.svg',
     animation: 'clapping',
   },
@@ -277,7 +315,8 @@ export const workExperiences = [
     name: 'Bifo',
     pos: 'Junior Web Developer',
     duration: '2020 - 2021',
-    title: "At Bifo, I worked on internal tools and client-facing websites, focusing on clean UI implementation and responsive layouts. I collaborated with designers and senior developers to deliver accessible, performant web experiences using HTML, CSS, JavaScript, and jQuery.",
+    title:
+      'At Bifo, I worked on internal tools and client-facing websites, focusing on clean UI implementation and responsive layouts. I collaborated with designers and senior developers to deliver accessible, performant web experiences using HTML, CSS, JavaScript, and jQuery.',
     icon: '/assets/bifo.svg',
     animation: 'salute',
   },
